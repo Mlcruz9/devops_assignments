@@ -1,0 +1,60 @@
+203.0.113.42 - - [31/Jan/2026:09:42:11 +0000] "GET /api/search HTTP/1.1" 400 334 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+172.20.0.3 - - [31/Jan/2026 09:42:11] "[31m[1mGET /api/search HTTP/1.1[0m" 400 -
+192.168.1.100 - - [31/Jan/2026:09:42:11 +0000] "GET /api/products HTTP/1.1" 200 2940 "-" "curl/7.68.0"
+172.20.0.3 - - [31/Jan/2026 09:42:11] "GET /api/products HTTP/1.1" 200 -
+203.0.113.42 - - [31/Jan/2026:09:42:12 +0000] "GET /api/users HTTP/1.1" 200 3102 "-" "Googlebot/2.1"
+172.20.0.3 - - [31/Jan/2026 09:42:12] "GET /api/users HTTP/1.1" 200 -
+198.51.100.50 - - [31/Jan/2026:09:42:12 +0000] "GET /checkout HTTP/1.1" 200 3760 "-" "BadBot/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:12] "GET /checkout HTTP/1.1" 200 -
+192.168.1.102 - - [31/Jan/2026:09:42:13 +0000] "GET /api/products HTTP/1.1" 200 8255 "-" "curl/7.68.0"
+172.20.0.3 - - [31/Jan/2026 09:42:13] "GET /api/products HTTP/1.1" 200 -
+198.51.100.50 - - [31/Jan/2026:09:42:14 +0000] "GET /api/search HTTP/1.1" 400 374 "-" "BadBot/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:14] "[31m[1mGET /api/search HTTP/1.1[0m" 400 -
+203.0.113.42 - - [31/Jan/2026:09:42:14 +0000] "GET /nonexistent HTTP/1.1" 404 305 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+172.20.0.3 - - [31/Jan/2026 09:42:14] "[33mGET /nonexistent HTTP/1.1[0m" 404 -
+192.168.1.100 - - [31/Jan/2026:09:42:15 +0000] "GET /api/orders HTTP/1.1" 200 5114 "-" "Scanner/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:15] "GET /api/orders HTTP/1.1" 200 -
+172.16.0.11 - - [31/Jan/2026:09:42:16 +0000] "GET / HTTP/1.1" 200 1310 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+172.20.0.3 - - [31/Jan/2026 09:42:16] "GET / HTTP/1.1" 200 -
+203.0.113.42 - - [31/Jan/2026:09:42:19 +0000] "GET / HTTP/1.1" 200 689 "-" "Scanner/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:19] "GET / HTTP/1.1" 200 -
+203.0.113.42 - - [31/Jan/2026:09:42:19 +0000] "GET / HTTP/1.1" 200 689 "-" "Scanner/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:19] "GET / HTTP/1.1" 200 -
+198.51.100.50 - - [31/Jan/2026:09:42:19 +0000] "GET /api/orders HTTP/1.1" 200 7593 "-" "BadBot/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:19] "GET /api/orders HTTP/1.1" 200 -
+10.0.0.51 - - [31/Jan/2026:09:42:20 +0000] "GET /api/products HTTP/1.1" 200 5701 "-" "BadBot/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:20] "GET /api/products HTTP/1.1" 200 -
+192.168.1.100 - - [31/Jan/2026:09:42:21 +0000] "GET /login HTTP/1.1" 200 721 "-" "Scanner/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:21] "GET /login HTTP/1.1" 200 -
+172.16.0.10 - - [31/Jan/2026:09:42:23 +0000] "GET /api/users HTTP/1.1" 200 2690 "-" "Googlebot/2.1"
+172.20.0.3 - - [31/Jan/2026 09:42:23] "GET /api/users HTTP/1.1" 200 -
+192.168.1.100 - - [31/Jan/2026:09:42:21 +0000] "GET /login HTTP/1.1" 200 721 "-" "Scanner/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:21] "GET /login HTTP/1.1" 200 -
+172.16.0.10 - - [31/Jan/2026:09:42:23 +0000] "GET /api/users HTTP/1.1" 200 2690 "-" "Googlebot/2.1"
+172.20.0.3 - - [31/Jan/2026 09:42:23] "GET /api/users HTTP/1.1" 200 -
+203.0.113.42 - - [31/Jan/2026:09:42:25 +0000] "GET /api/products HTTP/1.1" 200 9322 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+172.20.0.3 - - [31/Jan/2026 09:42:25] "GET /api/products HTTP/1.1" 200 -
+10.0.0.50 - - [31/Jan/2026:09:42:26 +0000] "GET /api/users HTTP/1.1" 200 2162 "-" "Scanner/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:26] "GET /api/users HTTP/1.1" 200 -
+192.168.1.102 - - [31/Jan/2026:09:42:28 +0000] "GET / HTTP/1.1" 200 1027 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+172.20.0.3 - - [31/Jan/2026 09:42:28] "GET / HTTP/1.1" 200 -
+203.0.113.42 - - [31/Jan/2026:09:42:25 +0000] "GET /api/products HTTP/1.1" 200 9322 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+172.20.0.3 - - [31/Jan/2026 09:42:25] "GET /api/products HTTP/1.1" 200 -
+10.0.0.50 - - [31/Jan/2026:09:42:26 +0000] "GET /api/users HTTP/1.1" 200 2162 "-" "Scanner/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:26] "GET /api/users HTTP/1.1" 200 -
+192.168.1.102 - - [31/Jan/2026:09:42:28 +0000] "GET / HTTP/1.1" 200 1027 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+172.20.0.3 - - [31/Jan/2026 09:42:28] "GET / HTTP/1.1" 200 -
+192.168.1.100 - - [31/Jan/2026:09:42:29 +0000] "GET /checkout HTTP/1.1" 200 5821 "-" "Googlebot/2.1"
+172.20.0.3 - - [31/Jan/2026 09:42:29] "GET /checkout HTTP/1.1" 200 -
+192.168.1.102 - - [31/Jan/2026:09:42:32 +0000] "GET /api/users HTTP/1.1" 200 2530 "-" "Scanner/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:32] "GET /api/users HTTP/1.1" 200 -
+192.168.1.102 - - [31/Jan/2026:09:42:32 +0000] "GET /api/users HTTP/1.1" 200 2530 "-" "Scanner/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:32] "GET /api/users HTTP/1.1" 200 -
+10.0.0.50 - - [31/Jan/2026:09:42:35 +0000] "GET /api/users HTTP/1.1" 200 2991 "-" "BadBot/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:35] "GET /api/users HTTP/1.1" 200 -
+198.51.100.50 - - [31/Jan/2026:09:42:37 +0000] "GET /static/image.jpg HTTP/1.1" 404 427 "-" "Scanner/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:37] "[33mGET /static/image.jpg HTTP/1.1[0m" 404 -
+198.51.100.50 - - [31/Jan/2026:09:42:37 +0000] "GET / HTTP/1.1" 200 1562 "-" "Scanner/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:37] "GET / HTTP/1.1" 200 -
+10.0.0.50 - - [31/Jan/2026:09:42:38 +0000] "GET /api/products HTTP/1.1" 200 7673 "-" "BadBot/1.0"
+172.20.0.3 - - [31/Jan/2026 09:42:38] "GET /api/products HTTP/1.1" 200 -

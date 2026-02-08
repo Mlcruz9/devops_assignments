@@ -1,2 +1,2 @@
-# devops_projects
-Devops projects and tests for specialization
+# devops_assignments
+Assignments from DevOps specialization.

@@ -79,5 +79,4 @@ docker logs -f flask-app | grep --color=auto -E " (4|5)[0-9]{2} "
 
 ![imagen6](/week1/ej_1/img/image6.png)
 
-* Note: Made one command to prove all working good. All other steps described are some sort of greping the access.log.
-
+* Note: Made one command to prove all working good. All other steps described are some sort of greping the access.log, had made all steps but didn't took pictures in the first run.

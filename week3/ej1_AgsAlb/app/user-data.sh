@@ -12,7 +12,7 @@ cd /home/ec2-user
 git clone https://github.com/Mlcruz9/devops_assignments.git
 
 # Navigate to app directory
-cd /devops_assignments/week3/ej1_AgsAlb/app
+cd ./devops_assignments/week3/ej1_AgsAlb/app
 
 # Make script executable and run
 chmod u+x run.sh

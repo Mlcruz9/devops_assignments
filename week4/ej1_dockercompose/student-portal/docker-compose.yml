@@ -1,0 +1,71 @@
+services:
+  app:
+    build: .
+    command:
+      [
+        "/bin/sh",
+        "/scripts/start-with-tmpfs-secrets.sh",
+        "python",
+        "run.py",
+      ]
+    ports:
+      - "8000:8000"  # Changed from 5000 to 8000
+    networks:
+      - test_network
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      FLASK_APP: app.py
+      FLASK_RUN_PORT: 8000
+      DB_USER: postgres
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: mydb
+      DB_PASSWORD_FILE: /run/secrets/db_password
+      SOURCE_SECRET_PATH: /run/local-secrets/db_password.txt
+      TARGET_SECRET_PATH: /run/secrets/db_password
+    tmpfs:
+      - /run/secrets:rw,nosuid,nodev,noexec,size=1m
+    volumes:
+      - ./secrets:/run/local-secrets:ro
+      - ./scripts:/scripts:ro
+
+  db:
+    image: postgres:15
+    command:
+      [
+        "/bin/sh",
+        "/scripts/start-with-tmpfs-secrets.sh",
+        "docker-entrypoint.sh",
+        "postgres",
+      ]
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: mydb
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_password
+      SOURCE_SECRET_PATH: /run/local-secrets/db_password.txt
+      TARGET_SECRET_PATH: /run/secrets/db_password
+    ports:
+      - "5432:5432"
+    restart: always
+    tmpfs:
+      - /run/secrets:rw,nosuid,nodev,noexec,size=1m
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./secrets:/run/local-secrets:ro
+      - ./scripts:/scripts:ro
+    networks:
+      - test_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB} -t 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+      start_period: 10s
+
+volumes:
+  postgres_data:
+
+networks:
+  test_network:
